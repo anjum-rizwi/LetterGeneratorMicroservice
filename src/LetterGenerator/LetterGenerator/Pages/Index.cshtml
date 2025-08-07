@@ -1,0 +1,19 @@
+@page
+@using LetterGenerator.Pages
+@model IndexModel
+<h2>Letter Generator</h2>
+<form method="post">
+    <label>Recipient Name: <input asp-for="RecipientName" /></label><br/>
+    <label>Letter Type:
+        <select asp-for="Format">
+            <option value="docx">Word</option>
+            <option value="pdf">PDF</option>
+            <option value="prn">PRN</option>
+        </select>
+    </label><br/>
+    <button type="submit">Generate Letter</button>
+</form>
+@if (Model.FileUrl != null)
+{
+    <p>Download: <a href="@Model.FileUrl">Your file</a></p>
+}
