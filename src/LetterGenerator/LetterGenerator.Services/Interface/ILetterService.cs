@@ -1,4 +1,4 @@
-namespace LetterGenerator.Services
+namespace LetterGenerator.Services.Interface
 {
     public interface ILetterService
     {

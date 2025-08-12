@@ -20,3 +20,18 @@
 {
     <p><a href="@Model.DownloadLink" download>Download your file</a></p>
 }
+
+<h2>Run Letter Job</h2>
+
+<form method="post">
+    <label>Client ID:</label>
+    <input name="ClientId" />
+    <label>Template File:</label>
+    <input name="Template" />
+    <button type="submit">Run Job</button>
+</form>
+
+@if (Model?.Status != null)
+{
+    <p>Status: @Model.Status</p>
+}

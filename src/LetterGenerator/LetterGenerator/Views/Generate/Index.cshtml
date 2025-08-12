@@ -1,0 +1,15 @@
+@model LetterGenerator.Models.JobRequest
+<form method="post">
+    <label>Client ID:</label><input asp-for="ClientId" /><br />
+    <label>Output Format:</label>
+    <select asp-for="OutputFormat">
+        <option value="docx">Word</option>
+        <option value="pdf">PDF</option>
+        <option value="prn">PRN</option>
+    </select><br />
+    <button type="submit">Generate</button>
+</form>
+@if (ViewBag.DownloadLink != null)
+{
+    <a href="@ViewBag.DownloadLink">Download Generated File</a>
+}

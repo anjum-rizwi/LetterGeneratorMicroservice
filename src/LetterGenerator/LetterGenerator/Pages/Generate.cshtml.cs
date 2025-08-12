@@ -10,6 +10,8 @@ namespace LetterGenerator.Pages
         [BindProperty]
         public string LetterType { get; set; }
 
+        [BindProperty]
+        public string Status { get; set; }
         [TempData]
         public string? DownloadLink { get; set; }
 

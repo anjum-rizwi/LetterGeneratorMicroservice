@@ -1,5 +1,46 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
+## Ignore Visual Studio folder
+.vs/
+*.user
+*.suo
 
-*.sqlite
+## Build results
+bin/
+obj/
+
+## Rider project files
+.idea/
+
+## User-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+## Dapr run artifacts
+**/.dapr/
+**/components/
+
+## Docker
+**/Dockerfile
+docker-compose.override.yml
+
+## Logs
+*.log
+logs/
+
+## Secrets
+secrets.json
+.env
+.env.*
+
+## Publish artifacts
+*.publish/
+
+## OS-specific
+.DS_Store
+Thumbs.db
+
+## GitHub workflows cache (if needed)
+.github/workflows/*.log

@@ -1,3 +1,5 @@
+using LetterGenerator.Services.Interface;
+
 namespace LetterGenerator.Services
 {
     public class LetterService : ILetterService
